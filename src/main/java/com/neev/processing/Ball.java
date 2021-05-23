@@ -15,10 +15,9 @@ public class Ball {
         return (float) (screenHeight * this.ballNo) / noOfDivisions;
     }
 
-    public float increaseSpeed() {
-        this.ballCurrentPosition += this.ballNo;
+    public float setBallPosition(float position) {
+        this.ballCurrentPosition = position;
         return this.ballCurrentPosition;
-
     }
 
 }
